@@ -14,6 +14,7 @@ public class Libro {
     private String titulo;
     private int numeroPaginas;
     private String numeroReferencia;
+    private int vecesPrestado;
 
     /**
      * Fija el autor y el titulo del libro a los dados como parametro
@@ -24,6 +25,7 @@ public class Libro {
         titulo = tituloLibro;
         numeroPaginas = numeroDePaginas;
         numeroReferencia = "";
+        vecesPrestado = 0;
     }
     
     //Metodo para devolver el valor del autor
@@ -44,6 +46,16 @@ public class Libro {
     //Metodo para devolver el numero de paginas del libro
     public int getNumeroPaginas() {
         return numeroPaginas;
+    }
+    
+    //Metodo para devolver el numero de veces prestadas del libro
+    public int getVecesPrestado() {
+        return vecesPrestado;
+    }
+    
+    //Metodo que modifica el atributo de veces prestado
+    public void prestar () {
+            vecesPrestado += 1;       
     }
     
     //Metodo para imprimir por pantalla el nombre del autor
@@ -76,6 +88,6 @@ public class Libro {
         if (numeroReferencia == ""){
                numeroReferencia = "ZZZ";
         }
-        return "Titulo: " + titulo +", autor: " + autor +", numero de paginas: " + numeroPaginas +", numero de referencia: " + numeroReferencia;
+        return "Titulo: " + titulo +", autor: " + autor +", numero de paginas: " + numeroPaginas +", numero de referencia: " + numeroReferencia +", numero de veces prestado: " + vecesPrestado;
     }    
 }
