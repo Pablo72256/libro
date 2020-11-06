@@ -40,12 +40,22 @@ public class Libro {
     }
     
     //Metodo para imprimir por pantalla el nombre del autor
-    public void impreimeAutor () {
+    public void imprimeAutor () {
             System.out.println("El nombre del autor es: " + autor);       
     }
     
     //Metodo para imprimir por pantalla el nombre del libro
-    public void impreimeTitulo () {
+    public void imprimeTitulo () {
             System.out.println("El nombre del titulo es: " + titulo);       
     }
+    
+    //Metodo para imprimir los detalles del libro
+    public void imprimeDetalles () {
+            System.out.println(getDetalles());  
+    }
+    
+    //Metodo que devuelve los detalles del libro
+    public String getDetalles() {
+        return "Titulo: " + titulo +", autor: " + autor +", numero de paginas: " + numeroPaginas;
+    }    
 }
