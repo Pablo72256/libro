@@ -28,7 +28,17 @@ public class Libro {
     }
     
     //Metodo para devolver el valor del libro
-    public String getNombreLibro() {
+    public String getNombreTitulo() {
         return titulo;
+    }
+    
+    //Metodo para imprimir por pantalla el nombre del autor
+    public void impreimeAutor () {
+            System.out.println("El nombre del autor es: " + autor);       
+    }
+    
+    //Metodo para imprimir por pantalla el nombre del libro
+    public void impreimeTitulo () {
+            System.out.println("El nombre del titulo es: " + titulo);       
     }
 }
