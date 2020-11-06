@@ -62,16 +62,16 @@ public class Libro {
     
     //Metodo que modifica el atributo de veces prestado
     public void prestar () {
-            vecesPrestado += 1;       
+        vecesPrestado += 1;       
     }
     
     //Metodo para imprimir por pantalla el nombre del autor
     public void imprimeAutor () {
-            System.out.println("El nombre del autor es: " + autor);       
+        System.out.println("El nombre del autor es: " + autor);       
     }
     
     //Metodo para imprimir por pantalla el numero de referencia
-    public void imprimeNumeroReferencia (String numeroDeReferencia) {
+    public void comprobarNumeroReferencia (String numeroDeReferencia) {
         if (numeroDeReferencia.length() > 3){
             numeroReferencia = numeroDeReferencia;
         }
@@ -82,19 +82,19 @@ public class Libro {
     
     //Metodo para imprimir por pantalla el nombre del libro
     public void imprimeTitulo () {
-            System.out.println("El nombre del titulo es: " + titulo);       
+        System.out.println("El nombre del titulo es: " + titulo);       
     }
     
     //Metodo para imprimir los detalles del libro
     public void imprimeDetalles () {
-            System.out.println(getDetalles());  
+        System.out.println(getDetalles());  
     }
     
     //Metodo que devuelve los detalles del libro
     public String getDetalles() {
         String libroDeTexto = "no";
         if (numeroReferencia == ""){
-               numeroReferencia = "ZZZ";
+            numeroReferencia = "ZZZ";
         }
         if (esLibroDeTexto == true){
             libroDeTexto = "si";
